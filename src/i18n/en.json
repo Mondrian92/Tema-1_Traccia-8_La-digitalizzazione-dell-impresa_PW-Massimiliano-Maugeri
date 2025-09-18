@@ -1,0 +1,10 @@
+{
+  "navbar.nav_button.label.crops_costs": "Colture e costi",
+  "navbar.nav_button.label.efficiency_quality": "Efficienza e qualità",
+  "navbar.nav_button.label.field_maps": "Mappe terreno",
+  "navbar.nav_button.label.resources_production": "Risorse e produzione",
+  "navbar.nav_button.label.weather_yield": "Meteo e raccolto",
+
+  "page.home.title": "Welcome to HarvestHub",
+  "page.home.description": "This starter Vite project includes a minimal setup, if you want to learn more on Mantine + Vite integration follow this guide to get started edit pages/Home.page.tsx file."
+}
