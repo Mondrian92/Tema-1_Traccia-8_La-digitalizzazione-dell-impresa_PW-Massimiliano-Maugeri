@@ -3,7 +3,7 @@ import itTranslations from "./it.json";
 import enTranslations from "./en.json";
 
 export type TranslationId = keyof typeof itTranslations;
-// TODO CHECK
+
 export const isTranslationId = (id: string): id is TranslationId =>
   id in itTranslations || id in enTranslations;
 

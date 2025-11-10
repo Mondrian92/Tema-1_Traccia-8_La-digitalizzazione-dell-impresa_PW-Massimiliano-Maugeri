@@ -11,7 +11,7 @@ const Layout = () => {
 
   return (
     <AppShell
-      padding="sm"
+      padding="xl"
       header={{ height: 60 }}
       navbar={{
         width: 300,

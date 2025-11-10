@@ -11,9 +11,6 @@ import { Route } from "@/router/types";
 export const ROUTES_NAME = [
   "home",
   "crops_costs",
-  "efficiency_quality",
-  "field_maps",
-  "resources_production",
   "weather_yield",
 ] as const;
 
@@ -33,11 +30,10 @@ const Loadable = (Component: React.ComponentType) => (props: any) => (
 );
 
 // Utilizzando il lazy loading, ogni pagina viene caricata solo quando viene visitata
+// questo ovviamente porta un piccolo rallentamento al primo caricamento, ma aumenta l'efficienza generale
+// in quanto all'avvio della pagina, il browser non necessita di caricare tutto il progetto, ma solo la pagina visitata
 const HomePage = Loadable(lazy(() => import("@/pages/Home")));
 const CropsCostsPage = Loadable(lazy(() => import("@/pages/CropsCosts")));
-const EfficiencyQualityPage = Loadable(lazy(() => import("@/pages/EfficiencyQuality")));
-const FieldMapsPage = Loadable(lazy(() => import("@/pages/FieldMaps")));
-const ResourcesProductionPage = Loadable(lazy(() => import("@/pages/ResourcesProduction")));
 const WeatherYieldPage = Loadable(lazy(() => import("@/pages/WeatherYield")));
 
 // Creando una costante per le routes, abbiamo la possibilità di riutilizzare la stessa costante
@@ -52,21 +48,6 @@ export const navbarRoutes: Route[] = [
     path: "/crops_costs",
     element: <CropsCostsPage />,
     name: "crops_costs",
-  },
-  {
-    path: "/efficiency_quality",
-    element: <EfficiencyQualityPage />,
-    name: "efficiency_quality",
-  },
-  {
-    path: "/field_maps",
-    element: <FieldMapsPage />,
-    name: "field_maps",
-  },
-  {
-    path: "/resources_production",
-    element: <ResourcesProductionPage />,
-    name: "resources_production",
   },
   {
     path: "/weather_yield",

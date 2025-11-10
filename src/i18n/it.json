@@ -1,11 +1,50 @@
 {
-  "navbar.nav_button.label.home": "home",
+  "navbar.nav_button.label.home": "Home",
   "navbar.nav_button.label.crops_costs": "Colture e costi",
   "navbar.nav_button.label.efficiency_quality": "Efficienza e qualità",
   "navbar.nav_button.label.field_maps": "Mappe terreno",
   "navbar.nav_button.label.resources_production": "Risorse e produzione",
   "navbar.nav_button.label.weather_yield": "Meteo e raccolto",
 
-  "page.home.title": "Welcome to HarvestHub",
-  "page.home.description": "This starter Vite project includes a minimal setup, if you want to learn more on Mantine + Vite integration follow this guide to get started edit pages/Home.page.tsx file."
+  "page.weather_yield.title": "Meteo e raccolto",
+  "page.weather_yield.chart_label.temperature": "Temperatura",
+  "page.weather_yield.chart_label.humidity": "Umidità",
+  "page.weather_yield.chart_label.precipitation": "Precipitazioni",
+  "page.weather_yield.chart_label.harvest": "Raccolto",
+
+  "page.crops_costs.title": "Colture e costi",
+  "page.crops_costs.chart_label.corn": "Mais",
+  "page.crops_costs.chart_label.wheat": "Grano",
+  "page.crops_costs.chart_label.tomatoes": "Pomodori",
+  "page.crops_costs.chart_label.potatoes": "Patate",
+  "page.crops_costs.chart_label.barley": "Orzo",
+  
+  "page.statistics.title": "Statistiche",
+  "page.statistics.chart_title.harvest_area": "Aree coltivate e raccolto",
+  "page.statistics.chart_title.harvest_weather": "Rapporto raccolto-meteo",
+  "page.statistics.chart_title.harvest_weather.previous_month": "Rapporto raccolto-meteo del mese precedente",
+  "page.statistics.chart_title.harvest_weather.previous_year": "Rapporto raccolto-meteo dell'anno precedente",
+  "page.statistics.chart_label.harvest": "Kg raccolti",
+  "page.statistics.chart_label.area": "Metri quadrati coltivati",
+  "page.statistics.chart_label.lemons": "Limoni",
+  "page.statistics.chart_label.oranges": "Arance",
+  "page.statistics.chart_label.tangerines": "Mandarini",
+  "page.statistics.chart_label.verdello_lemons": "Verdelli",
+  "page.statistics.chart_label.cedars": "Cedri",
+
+  "page.home.title": "Benvenuto su <gradient>HarvestHub</gradient>",
+  "page.home.description": "Centralizza tutti i dati della tua produzione agricola in un'unica dashboard intuitiva. Accedi rapidamente a metriche chiave, grafici personalizzati e report dettagliati per massimizzare l'efficienza aziendale.",
+
+  "utils.date_select.month_label.january": "Gennaio",
+  "utils.date_select.month_label.february": "Febbraio",
+  "utils.date_select.month_label.march": "Marzo",
+  "utils.date_select.month_label.april": "Aprile",
+  "utils.date_select.month_label.may": "Maggio",
+  "utils.date_select.month_label.june": "Giugno",
+  "utils.date_select.month_label.july": "Luglio",
+  "utils.date_select.month_label.august": "Agosto",
+  "utils.date_select.month_label.september": "Settembre",
+  "utils.date_select.month_label.october": "Ottobre",
+  "utils.date_select.month_label.november": "Novembre",
+  "utils.date_select.month_label.december": "Dicembre"
 }
