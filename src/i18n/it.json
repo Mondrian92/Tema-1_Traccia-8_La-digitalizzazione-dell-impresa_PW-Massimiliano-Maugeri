@@ -1,23 +1,12 @@
 {
   "navbar.nav_button.label.home": "Home",
-  "navbar.nav_button.label.crops_costs": "Colture e costi",
-  "navbar.nav_button.label.efficiency_quality": "Efficienza e qualità",
-  "navbar.nav_button.label.field_maps": "Mappe terreno",
-  "navbar.nav_button.label.resources_production": "Risorse e produzione",
-  "navbar.nav_button.label.weather_yield": "Meteo e raccolto",
+  "navbar.nav_button.label.statistics": "Statistiche",
 
   "page.weather_yield.title": "Meteo e raccolto",
   "page.weather_yield.chart_label.temperature": "Temperatura",
   "page.weather_yield.chart_label.humidity": "Umidità",
   "page.weather_yield.chart_label.precipitation": "Precipitazioni",
   "page.weather_yield.chart_label.harvest": "Raccolto",
-
-  "page.crops_costs.title": "Colture e costi",
-  "page.crops_costs.chart_label.corn": "Mais",
-  "page.crops_costs.chart_label.wheat": "Grano",
-  "page.crops_costs.chart_label.tomatoes": "Pomodori",
-  "page.crops_costs.chart_label.potatoes": "Patate",
-  "page.crops_costs.chart_label.barley": "Orzo",
   
   "page.statistics.title": "Statistiche",
   "page.statistics.chart_title.harvest_area": "Aree coltivate e raccolto",

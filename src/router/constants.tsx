@@ -10,8 +10,7 @@ import { Route } from "@/router/types";
 // assegnare un nome alla rotta, infatti il tipo ricavato viene usato all'interno del tipo "Route"
 export const ROUTES_NAME = [
   "home",
-  "crops_costs",
-  "weather_yield",
+  "statistics",
 ] as const;
 
 // Creando questo componente, abbiamo la possibilità di caricare le pagine in modo dinamico, infatti
@@ -33,8 +32,7 @@ const Loadable = (Component: React.ComponentType) => (props: any) => (
 // questo ovviamente porta un piccolo rallentamento al primo caricamento, ma aumenta l'efficienza generale
 // in quanto all'avvio della pagina, il browser non necessita di caricare tutto il progetto, ma solo la pagina visitata
 const HomePage = Loadable(lazy(() => import("@/pages/Home")));
-const CropsCostsPage = Loadable(lazy(() => import("@/pages/CropsCosts")));
-const WeatherYieldPage = Loadable(lazy(() => import("@/pages/WeatherYield")));
+const Statistics = Loadable(lazy(() => import("@/pages/Statistics")));
 
 // Creando una costante per le routes, abbiamo la possibilità di riutilizzare la stessa costante
 // in più di una funzione, come ad esempio la generazione dinamica dei tasti di navigazione
@@ -46,13 +44,8 @@ export const navbarRoutes: Route[] = [
   },
   {
     path: "/crops_costs",
-    element: <CropsCostsPage />,
-    name: "crops_costs",
-  },
-  {
-    path: "/weather_yield",
-    element: <WeatherYieldPage />,
-    name: "weather_yield",
+    element: <Statistics />,
+    name: "statistics",
   },
 ];
 
