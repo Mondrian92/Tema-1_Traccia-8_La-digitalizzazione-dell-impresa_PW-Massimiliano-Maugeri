@@ -6,6 +6,7 @@ export type CropProductionData = {
   cropName: CropType;
   totalHarvestKg: number;
   areaHectares: number;
+  euroPerKg: number;
 };
 
 // Tipizzazione esplicita degli oggetti, con chiavi limitate a CropType
@@ -23,6 +24,14 @@ const baseAreaMeans: Record<CropType, number> = {
   tangerines: 8000,
   verdello_lemons: 9000,
   cedars: 7000,
+};
+
+const baseCostMeans: Record<CropType, number> = {
+  lemons: 0.48,
+  oranges: 0.45,
+  tangerines: 0.6,
+  verdello_lemons: 0.7,
+  cedars: 0.4,
 };
 
 const generateNormalRandom = (mean: number, stdDev: number): number => {
@@ -43,11 +52,16 @@ const generateNormalRandom = (mean: number, stdDev: number): number => {
 };
 
 export const randomStatsPerCropsChartDataGenerator = (): CropProductionData[] => {
-  return cropTypes.map((crop) => ({
-    cropName: crop,
-    totalHarvestKg: Math.round(
+  return cropTypes.map((crop) => {
+    const totalHarvestKg = Math.round(
       generateNormalRandom(baseProductionMeans[crop], baseProductionMeans[crop] * 0.15)
-    ),
-    areaHectares: baseAreaMeans[crop],
-  }));
+    );
+
+    return {
+      cropName: crop,
+      totalHarvestKg,
+      areaHectares: baseAreaMeans[crop],
+      euroPerKg: baseCostMeans[crop] * totalHarvestKg,
+    };
+  });
 };
