@@ -34,7 +34,7 @@ export const randomStatsPerCropsChartDataGenerator = (): CropProductionData[] =>
       cropName: crop,
       totalHarvestKg,
       areaHectares: baseAreaMeans[crop],
-      euroPerKg: baseCostMeans[crop] * totalHarvestKg,
+      euroPerKg: Math.round(baseCostMeans[crop] * totalHarvestKg),
     };
   });
 };

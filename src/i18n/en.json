@@ -10,7 +10,7 @@
   "page.statistics.chart_title.harvest_weather.previous_month": "Harvest-Weather Report of Previous Month",
   "page.statistics.chart_title.harvest_weather.previous_year": "Harvest-Weather Report of Previous Year",
   "page.statistics.area_harvest_chart.label.harvest": "Harvests (kg)",
-  "page.statistics.area_harvest_chart.label.cost": "Potential Revenue (€)",
+  "page.statistics.area_harvest_chart.label.cost": "Gross profit (€)",
   "page.statistics.area_harvest_chart.label.area": "Cultivated Area (sqm)",
   "page.statistics.area_harvest_chart.label.lemons": "Lemons",
   "page.statistics.area_harvest_chart.label.oranges": "Oranges",
@@ -58,7 +58,7 @@
   "components.export_csv_button.header_label.date": "Date",
   "components.export_csv_button.header_label.sunExposure": "Sun Exposure",
   "components.export_csv_button.header_label.humidity": "Humidity",
-  "components.export_csv_button.header_label.euroPerKg": "Potential Revenue",
+  "components.export_csv_button.header_label.euroPerKg": "Gross profit",
   "components.export_csv_button.file_name.weather_harvest_chart": "harvest_weather_report_{month}_{year}",
   "components.export_csv_button.file_name.stats_per_crops_chart": "harvest_cultivated_areas_report_{month}_{year}"
 }

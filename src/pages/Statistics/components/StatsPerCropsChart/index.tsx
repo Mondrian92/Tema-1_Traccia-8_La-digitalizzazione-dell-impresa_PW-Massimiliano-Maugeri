@@ -58,7 +58,7 @@ const StatsPerCropsChart = ({ month, year = new Date().getFullYear() }: Props) =
           data={chartData}
           fileName={intl.formatMessage(
             {
-              id: "components.export_csv_button.file_name.weather_harvest_chart",
+              id: "components.export_csv_button.file_name.stats_per_crops_chart",
             },
             { month, year }
           )}

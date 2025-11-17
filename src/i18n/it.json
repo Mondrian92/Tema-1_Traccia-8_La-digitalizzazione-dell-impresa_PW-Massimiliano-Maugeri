@@ -10,7 +10,7 @@
   "page.statistics.chart_title.harvest_weather.previous_month": "Rapporto raccolto-meteo del mese precedente",
   "page.statistics.chart_title.harvest_weather.previous_year": "Rapporto raccolto-meteo dell'anno precedente",
   "page.statistics.area_harvest_chart.label.harvest": "Raccolti (kg)",
-  "page.statistics.area_harvest_chart.label.cost": "Guadagno potenziale (€)",
+  "page.statistics.area_harvest_chart.label.cost": "Guadagno lordo  (€)",
   "page.statistics.area_harvest_chart.label.area": "Superfice coltivata (mq)",
   "page.statistics.area_harvest_chart.label.lemons": "Limoni",
   "page.statistics.area_harvest_chart.label.oranges": "Arance",
@@ -58,7 +58,7 @@
   "components.export_csv_button.header_label.date": "Giorno",
   "components.export_csv_button.header_label.sunExposure": "Esposizione al sole",
   "components.export_csv_button.header_label.humidity": "Umidità",
-  "components.export_csv_button.header_label.euroPerKg": "Guadagno potenziale",
+  "components.export_csv_button.header_label.euroPerKg": "Guadagno lordo",
   "components.export_csv_button.file_name.weather_harvest_chart": "rapporto_raccolto_meteo_{month}_{year}",
   "components.export_csv_button.file_name.stats_per_crops_chart": "rapporto_aree_coltivate_raccolto_{month}_{year}"
 }
