@@ -23,7 +23,6 @@ const StatisticsPage = () => {
     []
   );
 
-  // TODO fix selezione dell'ultimo mese disponibile
   const previousMonth = useMemo(() => {
     const currentMonthIndex = monthsName.indexOf(month);
     const previousMonthIndex = currentMonthIndex === 0 ? 11 : currentMonthIndex - 1;

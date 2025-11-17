@@ -1,3 +1,4 @@
+import { DailyCombinedData } from "@/pages/Statistics/components/WeatherHarvestChart/types";
 import { monthsData } from "@/utils/constants";
 import { MonthName } from "@/utils/types";
 
@@ -23,15 +24,6 @@ const generateNormalRandom = (mean: number, stdDev: number): number => {
   return Math.round((mean + normalDistributionValue * stdDev) * 10) / 10;
 };
 
-type DailyCombinedData = {
-  date: string;
-  harvest: number; // produzione giornaliera
-  precipitation: number; // precipitazioni giornaliere
-  temperature: number; // temperatura giornaliera
-  sunExposure: number; // esposizione solare
-  humidity: number; // umidita
-};
-
 export const randomWeatherHarvestChartDataGenerator = (
   monthName: MonthName,
   year: number = new Date().getFullYear()
@@ -49,7 +41,7 @@ export const randomWeatherHarvestChartDataGenerator = (
 
     return {
       date: date.toLocaleDateString("it-IT", { day: "2-digit" }),
-      harvest: generateNormalRandom(120, 20), // Produzione media 120kg, variazione 20kg
+      harvest: generateNormalRandom(100, 20), // Produzione media 100 t, variazione 20 t, considerando che si parla di produzione totale per ogni coltura
       precipitation: Math.max(0, generateNormalRandom(3, 5)), // Precipitazioni (>= 0)
       temperature: generateNormalRandom(22, 5), // Temperatura media 22°C, variazione 5°C
       sunExposure: generateNormalRandom(6, 2), // Esposizione solare media 6h, variazione 2h

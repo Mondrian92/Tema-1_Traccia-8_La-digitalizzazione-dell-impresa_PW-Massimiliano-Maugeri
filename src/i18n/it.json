@@ -20,7 +20,7 @@
   "page.statistics.weather_harvest_chart.label.humidity": "Umidità (%)",
   "page.statistics.weather_harvest_chart.label.temperature": "Temperatura (C°)",
   "page.statistics.weather_harvest_chart.label.precipitation": "Precipitazioni (mm)",
-  "page.statistics.weather_harvest_chart.label.harvest": "Raccolto (kg)",
+  "page.statistics.weather_harvest_chart.label.harvest": "Raccolto (t)",
   "page.statistics.weather_harvest_chart.label.sun_exposure": "Esposizione solare (hh)",
   "page.statistics.analysis_modal.cta_label": "Impatto metereologico",
   "page.statistics.analysis_modal.title": "Analisi efficienza e inpatto ambientale",
