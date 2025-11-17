@@ -43,7 +43,7 @@ export const navbarRoutes: Route[] = [
     name: "home",
   },
   {
-    path: "/crops_costs",
+    path: "/statistics",
     element: <Statistics />,
     name: "statistics",
   },
