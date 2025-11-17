@@ -1,9 +1,10 @@
 import { Outlet } from "react-router-dom";
-import { AppShell, Burger, Group, Image, rem, Title } from "@mantine/core";
+import { AppShell, Burger, Group, Image, rem, ScrollArea, Title } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import LogoShrunk from "@/assets/faviconLogo.webp";
-import ThemeToggle from "@/components/ThemeToggle";
+import LanguageSelector from "@/components/LanguageSelector";
 import Navbar from "@/components/Layout/components/Navbar";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Layout = () => {
   const [mobileOpened, { toggle: toggleMobile }] = useDisclosure();
@@ -31,7 +32,13 @@ const Layout = () => {
         </Group>
       </AppShell.Header>
       <AppShell.Navbar p="md">
-        <Navbar />
+        <AppShell.Section grow my="md" component={ScrollArea} px="md">
+          <Navbar />
+        </AppShell.Section>
+
+        <AppShell.Section p="md">
+          <LanguageSelector />
+        </AppShell.Section>
       </AppShell.Navbar>
       <AppShell.Main>
         <Outlet />

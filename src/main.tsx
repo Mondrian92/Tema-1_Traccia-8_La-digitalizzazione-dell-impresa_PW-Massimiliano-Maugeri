@@ -1,16 +1,20 @@
 import ReactDOM from "react-dom/client";
 import { IntlProvider } from "react-intl";
-import { getI18nMessages } from "@/i18n";
+import LanguageProvider, { useLanguage } from "@/components/LanguageProvider";
 import App from "./App";
 
-const Root = () => {
-  const messages = getI18nMessages("it");
-
+// Un wrapper che collega il context alla lingua di IntlProvider
+function IntlWrapper() {
+  const { locale, messages } = useLanguage();
   return (
-    <IntlProvider messages={messages} locale="it" defaultLocale="it">
+    <IntlProvider locale={locale} messages={messages} defaultLocale="it">
       <App />
     </IntlProvider>
   );
-};
+}
 
-ReactDOM.createRoot(document.getElementById("root")!).render(<Root />);
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <LanguageProvider>
+    <IntlWrapper />
+  </LanguageProvider>
+);
