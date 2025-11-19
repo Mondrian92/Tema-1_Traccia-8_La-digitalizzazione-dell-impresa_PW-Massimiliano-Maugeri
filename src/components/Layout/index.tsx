@@ -1,3 +1,4 @@
+import { FormattedMessage } from "react-intl";
 import { Outlet } from "react-router-dom";
 import { AppShell, Burger, Group, Image, rem, ScrollArea, Title } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
@@ -26,7 +27,9 @@ const Layout = () => {
             <Burger opened={mobileOpened} onClick={toggleMobile} hiddenFrom="sm" size="sm" />
             <Burger opened={desktopOpened} onClick={toggleDesktop} visibleFrom="sm" size="sm" />
             <Image src={LogoShrunk} alt="logo" maw={rem(42)} />
-            <Title order={3}>HarvestHub</Title>
+            <Title order={3}>
+              <FormattedMessage id="header.title" />
+            </Title>
           </Group>
           <ThemeToggle />
         </Group>

@@ -1,4 +1,3 @@
-// LanguageSelector.tsx
 import { Select } from "@mantine/core";
 import { useLanguage } from "@/components/LanguageProvider";
 

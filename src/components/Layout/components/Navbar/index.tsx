@@ -7,7 +7,7 @@ import { navbarRoutes } from "@/router/constants";
 const Navbar = () => {
   const intl = useIntl();
 
-  // utilizzando l'array di rotte, creiamo dinamicamente l'elenco di tasti di navigazione
+  // Utilizzando l'array di rotte, creiamo dinamicamente l'elenco di tasti di navigazione
   return Children.toArray(
     navbarRoutes.map((page) => (
       <Link
